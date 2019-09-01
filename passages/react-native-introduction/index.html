@@ -6,7 +6,7 @@
   <meta name="author" content="Feng Yiyi">
   
   
-  <title>react-native入门实战一 | 朝夕 - 番茄工作法</title>
+  <title>react-native入门实战总结 | 朝夕 - 番茄工作法</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -15,7 +15,7 @@
   
 
   
-  <meta name="description" content="在公司提效的大背景下，今年6月初，部门的国际化新项目我们通过多方面的对比，技术选型采用react-native为最终的方案，之所以没有采用目前比较火的Flutter。其中的原因我会在以下小节有个简要的说明。历经3个月到目前为止，项目第一版已接近尾声，到了最后的细节调整阶段。正好借此机会记录下这段时间入坑RN的一些心得体会。">
+  <meta name="description" content="在公司提效的大背景下，今年6月初，部门的国际化新项目我们通过多方面的对比，技术选型采用react-native为最终的方案，之所以没有采用目前比较火的Flutter。其中的原因我会在以下小节有个简要的说明。历经3个月到目前为止，项目第一版已接近尾声，到了最后的细节调整阶段。正好借此机会记录下这段时间入坑RN的一些心得体会。~">
 
   
 
@@ -174,11 +174,12 @@
     
   </div>
   <h1 class="passage-title">
-    react-native入门实战一
+    react-native入门实战总结
   </h1>
   
   <article class="passage-article">
-    <h2 id="唠叨两句"><a href="#唠叨两句" class="headerlink" title="唠叨两句"></a>唠叨两句</h2><p>在公司提效的大背景下，今年6月初，部门的国际化新项目我们通过多方面的对比，技术选型采用react-native为最终的方案，之所以没有采用目前比较火的Flutter。其中的原因我会在以下小节有个简要的说明。历经3个月到目前为止，项目第一版已接近尾声，到了最后的细节调整阶段。正好借此机会记录下这段时间入坑RN的一些心得体会。</p>
+    <p></p>
+<h2 id="唠叨两句"><a href="#唠叨两句" class="headerlink" title="唠叨两句"></a>唠叨两句</h2><p>在公司提效的大背景下，今年6月初，部门的国际化新项目我们通过多方面的对比，技术选型采用react-native为最终的方案，之所以没有采用目前比较火的Flutter。其中的原因我会在以下小节有个简要的说明。历经3个月到目前为止，项目第一版已接近尾声，到了最后的细节调整阶段。正好借此机会记录下这段时间入坑RN的一些心得体会。</p>
 <h2 id="心得体会"><a href="#心得体会" class="headerlink" title="心得体会"></a>心得体会</h2><p>入坑3月有余，幸而有我们前端同学的加持，使我们在第一次使用新技术栈的同时开发如此大规模的项目，才能保证开发进度的顺利进行。</p>
 <p>在整个项目中使用到的语言包括TypeScript/JavaScript/Ojbective-C/Java，项目管理、打包、构建工具npm/cocoapods/gradle/webpack，至于开发工具方面我更喜欢WebStorm+AndroidStudio+AppCode组合，可以保证开发体验高度一致，开发速度会更快，当然Xcode必不可少。而前端同学更喜欢VSCode，都是可以的。</p>
 <p>react-native来实现项目中所有的业务逻辑，开发速度自然快了许多，使我这个同时开发过iOS和Android项目的人深深体会到了跨平台的好处，再也不会出现同样的功能在iOS侧和Android侧实现两遍而且实现思路还不一样，在维护时的痛苦。</p>
@@ -220,9 +221,11 @@
 <li><a href="https://github.com/necolas/react-native-web" target="_blank" rel="noopener">react-native-web</a></li>
 <li><a href="https://github.com/gre/react-native-view-shot" target="_blank" rel="noopener">react-native-view-shot</a></li>
 </ul>
-<h2 id="代码规范"><a href="#代码规范" class="headerlink" title="代码规范"></a>代码规范</h2><ul>
-<li><a href="https://github.com/airbnb/javascript/tree/master/react" target="_blank" rel="noopener">Airbnb React/JSX Style Guide</a></li>
+<h2 id="代码规范"><a href="#代码规范" class="headerlink" title="代码规范"></a>代码规范</h2><p>这点比较有意思的是，我们前端同学以前更多了解的是JS，而我们这次选用的开发语言是TS，其实还是有很多不同的。比如最简单的类型定义，习惯了OC/Java的同学自然是对JS那种无类型的语言深恶痛绝，而JS那种无类型的写法也不是TS的最佳实践，所以坦白来讲，我们小组基本没有什么经验来规范TS如何写才是最优雅的。</p>
+<p>这次选用TS的一个核心诉求也是为了其静态类型化功能，能帮助我们编写更健壮的代码、更好的协作。既然自己没有经验，不如拿来主义，以下两个是比较官方的两例。觉得不错。可以先试用之。</p>
+<ul>
 <li><a href="https://github.com/google/gts" target="_blank" rel="noopener">Google TypeScript Style</a></li>
+<li><a href="https://github.com/airbnb/javascript/tree/master/react" target="_blank" rel="noopener">Airbnb React/JSX Style Guide</a></li>
 </ul>
 <h2 id="react-native项目中需要掌握的技术栈"><a href="#react-native项目中需要掌握的技术栈" class="headerlink" title="react-native项目中需要掌握的技术栈"></a>react-native项目中需要掌握的技术栈</h2><ul>
 <li><p>iOS/Android - Objective-C/Swift/Java/Kotlin</p>
