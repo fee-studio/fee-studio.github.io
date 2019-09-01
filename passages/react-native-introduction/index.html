@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+  
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  <meta name="author" content="Feng Yiyi">
+  
+  
+  <title>朝夕 - 番茄工作法</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="Hexo, Theme-AD">
+  
+
+  
+  <meta name="description" content="冯夷夷的工作室">
+
+  
+
+  
+
+  
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+  
+
+  
+
+  
+
+  <script>
+  // theme-ad's config script
+  // it can be used in every script
+  
+  window.AD_CONFIG = {
+    leancloud: {"appid":"Hyq9wkH495DgNHWhDQCOfQSp-gzGzoHsz","appkey":"WaR7nrzhliHj9aVwdQzkdlGd","comment":false,"count":false},
+    welcome: {"enable":false,"interval":30},
+    start_time: "2018-01-15",
+    passwords: ["efe07af7441da2b69c4a41e42e73be4db47f66010a56900788a458354a7373ec", ],
+    is_post: true,
+    lock: false,
+    author: "Feng Yiyi",
+    share: {"twitter":true,"facebook":true,"weibo":true,"qq":true,"wechat":true},
+    mathjax: true,
+    page_type: "",
+    root: "/"
+  };
+</script>
+
+  <script src="/vendor/sha256.min.js"></script>
+<script src="/js/auth.js"></script>
+<script src="/js/index.js"></script>
+<script src="/vendor/qrcode.min.js"></script>
+
+  
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/images/touch-icon.png">
+  
+
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/index.css">
+<link rel="stylesheet" href="/styles/components/highlight/highlight.css">
+
+  
+</head>
+  <body>
+    <header class="site-header">
+  <div class="site-header-brand">
+    
+      <span class="site-header-brand-title">
+        <a href="/">FEE Studio</a>
+      </span>
+    
+    
+      <span class="site-header-brand-motto"> | 享受独立创作的乐趣</span>
+    
+  </div>
+  <div class="site-header-right">
+    <nav class="site-header-navigation">
+      
+        <a href="/" target="_self">首页</a>
+      
+        <a href="/archives/" target="_self">归档</a>
+      
+        <a href="/tags/" target="_self">标签</a>
+      
+        <a href="/categories/" target="_self">分类</a>
+      
+        <a href="/friends/" target="_self">友链</a>
+      
+        <a href="/about/" target="_self">关于</a>
+      
+    </nav>
+    <div class="site-header-btn">
+      
+        <a href="https://github.com/iosfeng/" target="_blank" id="site-github">
+          <i class="fa fa-github-alt"></i>
+        </a>
+      
+      <a href="javascript:void(0);" id="site-search">
+        <i class="fa fa-search"></i>
+      </a>
+      <a href="javascript:void(0);" id="site-nav-btn">
+        <i class="fa fa-ellipsis-v"></i>
+      </a>
+    </div>
+  </div>
+</header>
+<nav class="table-content" id="site-nav">
+  <div class="table-content-title">
+    <span>导航</span>
+  </div>
+  <div class="table-content-main">
+    <ol class="toc">
+      
+        <li class="toc-item">
+          <a href="/" target="_self">
+            首页
+          </a>
+        </li>
+      
+        <li class="toc-item">
+          <a href="/archives/" target="_self">
+            归档
+          </a>
+        </li>
+      
+        <li class="toc-item">
+          <a href="/tags/" target="_self">
+            标签
+          </a>
+        </li>
+      
+        <li class="toc-item">
+          <a href="/categories/" target="_self">
+            分类
+          </a>
+        </li>
+      
+        <li class="toc-item">
+          <a href="/friends/" target="_self">
+            友链
+          </a>
+        </li>
+      
+        <li class="toc-item">
+          <a href="/about/" target="_self">
+            关于
+          </a>
+        </li>
+      
+    </ol>
+  </div>
+</nav>
+<div id="site-process"></div>
+    <main>
+      
+  <div class="passage">
+  <div class="passage-meta">
+    <span>
+      <i class="fa fa-calendar"></i>2019-09-01
+    </span>
+    
+    
+      <span>
+        | <i class="fa fa-unlock-alt"></i>UNLOCK
+      </span>
+    
+  </div>
+  <h1 class="passage-title">
+    
+  </h1>
+  
+  <article class="passage-article">
+    <h1 id="react-native入门实战一"><a href="#react-native入门实战一" class="headerlink" title="react-native入门实战一"></a>react-native入门实战一</h1><h2 id="唠叨两句"><a href="#唠叨两句" class="headerlink" title="唠叨两句"></a>唠叨两句</h2><p>在公司提效的大背景下，今年6月初，部门的国际化新项目我们通过多方面的对比，技术选型采用react-native为最终的方案，之所以没有采用目前比较火的Flutter。其中的原因我会在以下小节有个简要的说明。历经3个月到目前为止，项目第一版已接近尾声，到了最后的细节调整阶段。正好借此机会记录下这段时间入坑RN的一些心得体会。</p>
+<h2 id="心得体会"><a href="#心得体会" class="headerlink" title="心得体会"></a>心得体会</h2><p>入坑3月有余，幸而有我们前端同学的加持，使我们在第一次使用新技术栈的同时开发如此大规模的项目，才能保证开发进度的顺利进行。</p>
+<p>在整个项目中使用到的语言包括TypeScript/JavaScript/Ojbective-C/Java，项目管理、打包、构建工具npm/cocoapods/gradle/webpack，至于开发工具方面我更喜欢WebStorm+AndroidStudio+AppCode组合，可以保证开发体验高度一致，开发速度会更快，当然Xcode必不可少。而前端同学更喜欢VSCode，都是可以的。</p>
+<p>react-native来实现项目中所有的业务逻辑，开发速度自然快了许多，使我这个同时开发过iOS和Android项目的人深深体会到了跨平台的好处，再也不会出现同样的功能在iOS侧和Android侧实现两遍而且实现思路还不一样，在维护时的痛苦。</p>
+<p>由于项目中会用到前端React的知识以及移动端iOS和Android的知识，我们小组同时都有各自领域很擅长的同学，得以在开发整个过程中都能hold住各自的模块，为了让前端同学在不需要了解移动端很多知识的前提下可以正常、稳定的跑起项目，我们在项目初期编写了大量的npm脚本命令来实现一键启动react-native服务，运行、构建、打包、安装iOS和Android App的命令。使前端同学可以快速的开发、调试以及打包提测。</p>
+<h2 id="技术选型"><a href="#技术选型" class="headerlink" title="技术选型"></a>技术选型</h2><p>都9102年了，为什么还选react-native？当时5、6月份做选型的时候，也做了很多方面的对比。当然，最后对比的主要还是关注在react-native和Flutter的选择上。由于项目大，人员又比较少，所以想通过跨平台的技术来提效是一个大前提，很多能达到跨平台效果的框架我们都做了整体的调研，比如ionic、weex、hybrid等等，不过为了追求原生般的用户体验，这些方案都被pass掉了。至于react-native和Flutter的选择，前端之巅公众号在8月中旬发布这篇文章<a href="https://mp.weixin.qq.com/s/DlzY6qxFC8UnmvnJJtMXTQ" target="_blank" rel="noopener">《为什么Flutter还不是最成熟的跨端框架》</a>里面的观点很入我的法眼。</p>
+<p>重点关注以下几点：</p>
+<ol>
+<li>开发语言：JS or Dart？ 由于本次项目比较急，排期又是倒排，为了保证项目的进度，选择团队中熟悉的技术语言JS是很关键的。</li>
+<li>成熟度：很明显react-native的生态要比Flutter要好得多、成熟的多，单从issue来看，框架本身react-native也要稳定很多，而且第三方库也要多很多。</li>
+<li>热更新支持：目前Flutter官方还是不支持热更新，而且也没有相关的计划表。</li>
+<li>WEB平台支持：Flutter在5月初的1.5版本刚支持到WEB平台，还不够成熟。无法在生产环境中使用。</li>
+</ol>
+<h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><p><a href="https://facebook.github.io/react-native/docs/getting-started" target="_blank" rel="noopener">官方的环境搭建文档</a>已经有详细的说明，这里不再重复。大家可以看下我本地的环境配置版本，目前整个项目运行稳定，可以借鉴。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">$ react-native info</span><br><span class="line">info </span><br><span class="line">  React Native Environment Info:</span><br><span class="line">    System:</span><br><span class="line">      OS: macOS 10.14.6</span><br><span class="line">      CPU: (8) x64 Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz</span><br><span class="line">      Memory: 259.21 MB / 16.00 GB</span><br><span class="line">      Shell: 3.2.57 - /bin/bash</span><br><span class="line">    Binaries:</span><br><span class="line">      Node: 8.11.1 - /usr/<span class="built_in">local</span>/bin/node</span><br><span class="line">      Yarn: 1.12.3 - /usr/<span class="built_in">local</span>/bin/yarn</span><br><span class="line">      npm: 6.10.3 - /usr/<span class="built_in">local</span>/bin/npm</span><br><span class="line">      Watchman: 4.9.0 - /usr/<span class="built_in">local</span>/bin/watchman</span><br><span class="line">    SDKs:</span><br><span class="line">      iOS SDK:</span><br><span class="line">        Platforms: iOS 12.4, macOS 10.14, tvOS 12.4, watchOS 5.3</span><br><span class="line">      Android SDK:</span><br><span class="line">        API Levels: 22, 23, 24, 25, 26, 27, 28</span><br><span class="line">        Build Tools: 19.1.0, 20.0.0, 21.1.2, 22.0.1, 23.0.1, 23.0.2, 23.0.3, 24.0.0, 24.0.1, 24.0.2, 24.0.3, 25.0.0, 25.0.1, 25.0.2, 25.0.3, 26.0.0, 26.0.1, 26.0.2, 26.0.3, 27.0.0, 27.0.1, 27.0.2, 27.0.3, 28.0.0, 28.0.0, 28.0.2, 28.0.3</span><br><span class="line">        System Images: android-28 | Google Play Intel x86 Atom</span><br><span class="line">    IDEs:</span><br><span class="line">      Android Studio: 3.4 AI-183.6156.11.34.5692245</span><br><span class="line">      Xcode: 10.3/10G8 - /usr/bin/xcodebuild</span><br><span class="line">    npmPackages:</span><br><span class="line">      react: 16.8.3 =&gt; 16.8.3 </span><br><span class="line">      react-native: 0.59.10 =&gt; 0.59.10 </span><br><span class="line">    npmGlobalPackages:</span><br><span class="line">      react-native-cli: 2.0.1</span><br><span class="line">      react-native-git-upgrade: 0.2.7</span><br></pre></td></tr></table></figure>
+<p>值得一说的是，ract-native库使用的是0.59.10，0.59的最后一个版本，相信0.60版本后Android侧引入的新JS引擎，对App的性能有更多的提升。后续也会做响应的升级。还有，每个开发的cocoapods包管理工具最好也要保持一致，目前我们统一使用<code>1.7.2</code>版本，否则，每次<code>pod install</code>都会引起Podfile.lock文件的变化，容易代码冲突。</p>
+<p>另外，本项目采用的开发语言为TypeScript，并没有采用JavaScript。TypeScript中增加了静态类型、类、模块、接口和类型注解等等，对我们移动开发者常用的面向对象的语言OC/Java都很熟悉，上手更加容易、更易理解，而且其面向对象编程语言的结构保持了代码的清洁、一致和简单的调试，在应对大型开发项目时，使用TypeScript更加合适。</p>
+<h2 id="常用组件-amp-第三方库"><a href="#常用组件-amp-第三方库" class="headerlink" title="常用组件&amp;第三方库"></a>常用组件&amp;第三方库</h2><p>常用的官方组件我这里不一一介绍，大家可以直接看<a href="https://facebook.github.io/react-native/docs/activityindicator" target="_blank" rel="noopener">官方文档</a>，官方文档永远是最新最可靠的。</p>
+<p>以下所列是我们项目中目前使用到的第三方库，能帮助我们更好、更快地开发和构建项目。有兴趣的同学可以点开了解一下，相信有很多库都是大多数项目中离不开的，比如导航库react-navigation、状态管理库mobx/redux等等。</p>
+<ul>
+<li><a href="https://reactnavigation.org/zh-Hans/" target="_blank" rel="noopener">react-navigation</a></li>
+<li><a href="https://github.com/mobxjs/mobx" target="_blank" rel="noopener">mobx</a></li>
+<li><a href="https://github.com/react-native-community/react-native-localize" target="_blank" rel="noopener">react-native-localize</a></li>
+<li><a href="https://github.com/kevinresol/react-native-default-preference" target="_blank" rel="noopener">react-native-default-preference</a></li>
+<li><a href="https://github.com/Starotitorov/react-native-deep-link" target="_blank" rel="noopener">react-native-deep-link</a></li>
+<li><a href="https://github.com/zo0r/react-native-push-notification" target="_blank" rel="noopener">react-native-push-notification</a></li>
+<li><a href="https://github.com/react-native-community/react-native-linear-gradient" target="_blank" rel="noopener">react-native-linear-gradient</a></li>
+<li><a href="https://github.com/react-native-community/react-native-cameraroll" target="_blank" rel="noopener">react-native-cameraroll</a></li>
+<li><a href="https://github.com/GeekyAnts/react-native-easy-grid" target="_blank" rel="noopener">react-native-easy-grid</a></li>
+<li><a href="https://github.com/react-native-community/react-native-device-info" target="_blank" rel="noopener">react-native-device-info</a></li>
+<li><a href="https://github.com/ptelad/react-native-iphone-x-helper" target="_blank" rel="noopener">react-native-iphone-x-helper</a></li>
+<li><a href="https://github.com/react-native-community/react-native-webview" target="_blank" rel="noopener">react-native-webview</a></li>
+<li><a href="https://github.com/joeferraro/react-native-cookies" target="_blank" rel="noopener">react-native-cookies</a>  这个库不好用，自己实现</li>
+<li><a href="https://github.com/itinance/react-native-fs" target="_blank" rel="noopener">react-native-fs</a></li>
+<li><a href="https://github.com/awesomejerry/react-native-qrcode-svg" target="_blank" rel="noopener">react-native-qrcode-svg</a></li>
+<li><a href="https://github.com/crazycodeboy/react-native-splash-screen" target="_blank" rel="noopener">react-native-splash-screen</a></li>
+<li><a href="https://github.com/APSL/react-native-keyboard-aware-scroll-view" target="_blank" rel="noopener">react-native-keyboard-aware-scroll-view</a></li>
+<li><a href="https://github.com/react-native-community/react-native-image-picker" target="_blank" rel="noopener">react-native-image-picker</a></li>
+<li><a href="https://github.com/magicismight/react-native-root-toast" target="_blank" rel="noopener">react-native-root-toast</a></li>
+<li><a href="https://github.com/necolas/react-native-web" target="_blank" rel="noopener">react-native-web</a></li>
+<li><a href="https://github.com/gre/react-native-view-shot" target="_blank" rel="noopener">react-native-view-shot</a></li>
+</ul>
+<h2 id="代码规范"><a href="#代码规范" class="headerlink" title="代码规范"></a>代码规范</h2><ul>
+<li><a href="https://github.com/airbnb/javascript/tree/master/react" target="_blank" rel="noopener">Airbnb React/JSX Style Guide</a></li>
+<li><a href="https://github.com/google/gts" target="_blank" rel="noopener">Google TypeScript Style</a></li>
+</ul>
+<h2 id="react-native项目中需要掌握的技术栈"><a href="#react-native项目中需要掌握的技术栈" class="headerlink" title="react-native项目中需要掌握的技术栈"></a>react-native项目中需要掌握的技术栈</h2><ul>
+<li><p>iOS/Android - Objective-C/Swift/Java/Kotlin</p>
+<ul>
+<li>原生开发基础，涉及太多知识，这里暂不列举</li>
+</ul>
+</li>
+<li><p>JS/TS - ES2015/ES6</p>
+<ul>
+<li><a href="http://es6.ruanyifeng.com/#docs/object" target="_blank" rel="noopener">ECMAScript6入门教程</a></li>
+<li><a href="http://www.runoob.com/js/js-tutorial.html" target="_blank" rel="noopener">JavaScript教程</a></li>
+<li><a href="http://bbs.reactnative.cn/topic/15/react-react-native-的es5-es6写法对照表" target="_blank" rel="noopener">React/React Native的ES5 ES6写法对照表</a></li>
+<li><a href="http://geek.csdn.net/news/detail/239352" target="_blank" rel="noopener">ES6的十大特性</a></li>
+<li><a href="https://www.typescriptlang.org/" target="_blank" rel="noopener">TS官网</a>    </li>
+</ul>
+</li>
+<li><p>React - JavaScript/JSX语法/HTML/CSS</p>
+<ul>
+<li><a href="http://www.ruanyifeng.com/blog/2015/03/react.html" target="_blank" rel="noopener">React入门实例教程</a></li>
+<li><a href="https://reactjs.org/" target="_blank" rel="noopener">React官方教程</a></li>
+<li><a href="https://typescript.bootcss.com/tutorials/react-&amp;-webpack.html" target="_blank" rel="noopener">React与webpack</a></li>
+</ul>
+</li>
+<li><p>ReactNative - React</p>
+<ul>
+<li><a href="http://facebook.github.io/react-native/docs/getting-started.html" target="_blank" rel="noopener">ReactNative官方文档</a></li>
+<li><a href="https://reactnative.cn" target="_blank" rel="noopener">ReactNative中文文档</a></li>
+<li><a href="https://github.com/reactnativecn/react-native-guide" target="_blank" rel="noopener">react-native-guide</a></li>
+</ul>
+</li>
+<li><p>【进阶】MobX/Redux - 状态管理、组件间的通信</p>
+<ul>
+<li><a href="https://github.com/mobxjs/mobx" target="_blank" rel="noopener">mobx</a></li>
+<li><a href="http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html" target="_blank" rel="noopener">Redux入门教程</a></li>
+<li><a href="http://www.redux.org.cn/docs/basics/index.html" target="_blank" rel="noopener">Redux中文教程</a></li>
+</ul>
+</li>
+<li><p>Node/NPM - 项目、包管理</p>
+<ul>
+<li><a href>暂无</a></li>
+</ul>
+</li>
+<li><p>热更新</p>
+<ul>
+<li><a href="http://microsoft.github.io/code-push/index.html#getting_started" target="_blank" rel="noopener">CodePush</a></li>
+</ul>
+</li>
+<li><p>其他</p>
+<ul>
+<li><a href="http://www.hangge.com/blog/cache/category_76_1.html" target="_blank" rel="noopener">React Native专题文章</a></li>
+<li><a href="http://www.hangge.com/blog/cache/detail_1486.html" target="_blank" rel="noopener">React Native - Text组件使用详解（样式、属性、方法）</a></li>
+<li><a href="http://blog.csdn.net/quanqinyang/article/details/52215641" target="_blank" rel="noopener">React Native布局详细指南</a></li>
+</ul>
+</li>
+</ul>
+
+  </article>
+  <aside class="table-content" id="site-toc">
+  <div class="table-content-title">
+    <i class="fa fa-arrow-right fa-lg" id="site-toc-hide-btn"></i>
+    <span>目录</span>
+  </div>
+  <div class="table-content-main">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#react-native入门实战一"><span class="toc-text">react-native入门实战一</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#唠叨两句"><span class="toc-text">唠叨两句</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#心得体会"><span class="toc-text">心得体会</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#技术选型"><span class="toc-text">技术选型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#环境搭建"><span class="toc-text">环境搭建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#常用组件-amp-第三方库"><span class="toc-text">常用组件&amp;第三方库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#代码规范"><span class="toc-text">代码规范</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#react-native项目中需要掌握的技术栈"><span class="toc-text">react-native项目中需要掌握的技术栈</span></a></li></ol></li></ol>
+  </div>
+</aside>
+  
+    <aside class="passage-copyright">
+      <div>本文作者: 冯夷夷</div>
+      
+        <div>
+          原文链接: 
+          <a href target="_blank">https://www.buerguo.com/passages/react-native-introduction/</a>
+        </div>
+      
+      <div>
+        版权声明: 本博客所有文章除特别声明外, 均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议. 转载请注明出处!
+      </div>
+    </aside>
+  
+  
+</div>
+
+    </main>
+    
+    <div class="site-footer-wrapper">
+  <footer class="site-footer">
+    
+      
+        <div class="site-footer-col">
+          <h5 class="site-footer-title">博客推荐</h5>
+          
+            <span class="site-footer-item">
+              <a href="https://godbmw.com/" target="_blank">GodBMW</a>
+            </span>
+          
+            <span class="site-footer-item">
+              <a href="http://ruanyifeng.com/" target="_blank">阮一峰的个人网站</a>
+            </span>
+          
+        </div>
+      
+        <div class="site-footer-col">
+          <h5 class="site-footer-title">系列教程</h5>
+          
+            <span class="site-footer-item">
+              <a href="https://godbmw.com/categories/webpack4%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B/" target="_blank">webpack4系列教程</a>
+            </span>
+          
+            <span class="site-footer-item">
+              <a href="https://godbmw.com/design-patterns/" target="_blank">设计模式手册</a>
+            </span>
+          
+        </div>
+      
+        <div class="site-footer-col">
+          <h5 class="site-footer-title">抓到我</h5>
+          
+            <span class="site-footer-item">
+              <a href="https://juejin.im/user/5b91fcf06fb9a05d3c7fd4a5" target="_blank">掘金</a>
+            </span>
+          
+            <span class="site-footer-item">
+              <a href="https://segmentfault.com/" target="_blank">思否</a>
+            </span>
+          
+        </div>
+      
+    
+    <div class="site-footer-info">
+      <i class="fa fa-clock-o"></i> 本站已稳定运行<span id="site-time"></span>
+    </div>
+    
+    
+      <div class="site-footer-info">
+        <i class="fa fa-at"></i> Email: iosfeng@163.com
+      </div>
+    
+    <div class="site-footer-info">
+      <i class="fa fa-copyright"></i> 
+      2019 <a href="https://github.com/dongyuanxin/theme-ad/" target="_blank">Theme-AD</a>.
+      Created by <a href="https://godbmw.com/" target="_blank">GodBMW</a>.
+      All rights reserved.
+    </div>
+  </footer>
+</div>
+    <div id="site-layer" style="display:none;">
+  <div class="site-layer-content">
+    <div class="site-layer-header">
+      <span class="site-layer-header-title" id="site-layer-title"></span>
+      <i class="fa fa-close" id="site-layer-close"></i>
+    </div>
+    <div class="site-layer-body" id="site-layer-container">
+      <div class="site-layer-input" id="site-layer-search" style="display: none;">
+        <input type="text">
+        <i class="fa fa-search"></i>
+      </div>
+      
+        <div class="site-layer-reward" id="site-layer-reward" style="display: none;">
+          
+            <div>
+              <img src="/images/wechat.png" alt="WeChat">
+              
+                <p>WeChat</p>
+              
+            </div>
+          
+            <div>
+              <img src="/images/alipay.png" alt="AliPay">
+              
+                <p>AliPay</p>
+              
+            </div>
+          
+        </div>
+      
+      <div id="site-layer-welcome" style="display:none;"></div>
+    </div>
+  </div>
+</div>
+    
+
+<div class="bottom-bar">
+  <div class="bottom-bar-left">
+    <a href="javascript:void(0);" data-enable="false">
+      <i class="fa fa-arrow-left"></i>
+    </a>
+    <a href="/passages/four_quadrant/" data-enable="true">
+      <i class="fa fa-arrow-right"></i>
+    </a>
+  </div>
+  <div class="bottom-bar-right">
+    <a href="javascript:void(0);" data-enable="true" id="site-toc-show-btn">
+      <i class="fa fa-bars"></i>
+    </a>
+    
+    <a href="javascript:void(0);" id="site-toggle-share-btn">
+      <i class="fa fa-share-alt"></i>
+    </a>
+    
+      <a href="javascript:void(0);" id="site-reward">
+        <i class="fa fa-thumbs-up"></i>
+      </a>
+    
+    <a href="javascript:void(0);" id="back-top-btn">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
+</div>
+    <div id="share-btn">
+  
+    <a id="share-btn-twitter" href="javascript:void(0);" target="_blank">
+      <i class="fa fa-twitter"></i>
+    </a>
+  
+  
+    <a id="share-btn-facebook" href="javascript:void(0);" target="_blank">
+      <i class="fa fa-facebook"></i>
+    </a>
+  
+  
+    <a id="share-btn-weibo" href="javascript:void(0);" target="_blank">
+      <i class="fa fa-weibo"></i>
+    </a>
+  
+  
+    <a id="share-btn-qq" href="javascript:void(0);" target="_blank">
+      <i class="fa fa-qq"></i>
+    </a>
+  
+  
+    <a id="share-btn-wechat" href="javascript:void(0);" target="_blank">
+      <i class="fa fa-wechat"></i>
+    </a>
+  
+</div>
+    
+
+
+  <script async>
+  (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      }
+      else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+  })();
+  </script>
+
+
+
+
+    
+  </body>
+</html>
